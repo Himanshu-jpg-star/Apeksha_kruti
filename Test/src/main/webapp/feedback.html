@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.box{
+  width: 900px;
+  border: 5px solid black;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 50px;
+  align-content:center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apeksha Kruthi</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="position:relative; min-height:100%;top:0px;">
+
+<!-- header section -->
+
+<header>
+
+    <img src="logoo.png" class="logo" width="100" height="100" ></img>
+    <div id="google_element"></div>
+   <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+   <script>
+    function loadGoogleTranslate(){
+      new google.translate.TranslateElement("google_element");
+    }
+   </script>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a  href="index.html" accesskey="h">Home</a>
+
+        <a href="details.html" accesskey="s">Details</a>
+        <a href="registration.html" accesskey="g">Registration</a>
+        <a href="result.html" accesskey="r">Result</a>
+
+       
+        <a href="login.html" accesskey="l">Login</a>
+        <a href="feedback.html" accesskey="b">Feedback</a>
+        <a href="aboutuss.html" accesskey="a">About us</a>
+    </nav>
+
+</header>
+<section class="wrapper">
+    <div class="form signup">
+     
+        <div id="google_element"></div>
+ <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+ <script>
+  function loadGoogleTranslate(){
+    new google.translate.TranslateElement("google_element");
+  }
+ </script>
+<section class="feedback" id="feedback">
+
+    <h1 class="heading" >FEEDBACK</h1>
+
+    <div class="box-container">
+      <form action="government2" method="GET">
+<div class="box">
+
+<b><u><heading style="font-size: large;color: #0d4738;">Please fill the form</heading></u></b><br><br>
+<h2>Enter your email.</h2>
+<input type="email" name="email" id="email" placeholder="Email address" style="border-radius: 5px; border: 1px solid black;"required /><br>
+<br><h2>Enter your name.</h2>
+<input type="text" name="name" id="name" placeholder="Full name" style="border-radius: 5px; border: 1px solid black;"required /><br>
+<br><h2>Rate the experience while using the website.</h2>
+<input type="text" name="rate" id="rate" placeholder="1-10" style="border-radius: 5px; border: 1px solid black;" required/><br>
+<br><h2>What is the reason for the visit?</h2>
+<textarea rows = "5" cols = "60" name = "reas" id="reas" style="border-radius: 5px;border: 1px solid black;"></textarea><br>
+<br><h2>Did you receive the required information?</h2>
+<input type="text" name="goal" id="goal" placeholder="Yes/No" style="border-radius: 5px;border: 1px solid black;"required /><br>
+<br><h2>Any suggestions for the improvement of the website.</h2>
+<textarea rows = "5" cols = "60" name = "imp" id="imp" style="border-radius: 5px; border: 1px solid black;"></textarea><br>
+<input type="reset" value="RESET" style="color:  #0d4738; background-color: rgb(252, 171, 104); padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; border-radius: 10px;"><br><br>
+<br><input type="submit" value="SUBMIT" style="color:  #0d4738; background-color: rgb(190, 235, 193); padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; border-radius: 10px;" />
+</form>
+</section>
+<script>
+    const wrapper = document.querySelector(".wrapper"),
+      signupHeader = document.querySelector(".signup header"),
+      loginHeader = document.querySelector(".login header");
+
+    loginHeader.addEventListener("click", () => {
+      wrapper.classList.add("active");
+    });
+    signupHeader.addEventListener("click", () => {
+      wrapper.classList.remove("active");
+    });
+  </script>
+</section>
+</div>
